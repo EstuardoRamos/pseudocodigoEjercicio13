@@ -1,5 +1,8 @@
 Algoritmo pseudocodigoEjercicio13
+	Definir opc Como Entero
 	Hacer
+		Definir num1,num2,suma, division Como Real
+		Escribir "Menu"
 		Escribir "Seleccione una opcion";
 		Escribir "1. Sumar dos numeros";
 		Escribir "2. Dividir dos numeros"
@@ -17,8 +20,13 @@ Algoritmo pseudocodigoEjercicio13
 				leer num1;
 				Escribir "Ingrese segundo numero";
 				Leer num2;
-				division=num1/num2
-				Escribir "El resultado de la division es ",division;
+				si num1<>0 y num2<>0 Entonces
+					division=num1/num2
+					Escribir "El resultado de la division es ",division;
+				SiNo
+					Escribir "Numeros incorrectos"
+				FinSi
+				
 			FinSi
 		FinSi
 		Escribir "------------------------------------------------------------"
